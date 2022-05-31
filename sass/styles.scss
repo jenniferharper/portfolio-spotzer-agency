@@ -70,7 +70,7 @@ h1 {
     font-size: 56px;
   }
   @media (min-width: 1400px) {
-    font-size: 40px;
+    font-size: 38px;
   }
 }
 
@@ -82,7 +82,6 @@ h2 {
 p.large {
   font-size: 5vw;
   font-weight: 400;
-  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -221,6 +220,7 @@ div[class^="col"] {
   line-height: 1;
   color: $brand-contrast;
   margin: 20px 0;
+  letter-spacing: 2px;
   span {
     position: absolute;
     color: $white;
@@ -230,7 +230,7 @@ div[class^="col"] {
     overflow: hidden;
   }
   @media (min-width: 768px) {
-    font-size: 8rem;
+    font-size: 7rem;
   }
   @media (min-width: 992px) {
     writing-mode: vertical-rl;
@@ -708,6 +708,11 @@ div[class^="col"] {
   div[class^="col"] {
     padding: 0;
   }
+  p:not(.large){
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px  ;
+  }
   figure {
     &.spotzeragency {
       padding: $sm;
@@ -740,6 +745,7 @@ div[class^="col"] {
       }
     }
   }
+
 }
 
 .icon-dev {
@@ -772,6 +778,11 @@ div[class^="col"] {
     @media (min-width:768px){
       max-height:unset;
     }
+  }
+  p:not(.large){
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px  ;
   }
 }
 
